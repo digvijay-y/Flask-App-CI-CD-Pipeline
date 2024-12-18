@@ -53,34 +53,7 @@ This project demonstrates containerization of a Python Flask application using D
 The GitLab CI/CD pipeline automates the following stages:
 
     Build: Builds the Docker image for the Flask app.
-    Test (Optional): Runs unit tests using Python's unittest module.
-
-You can replicate this pipeline by including the .gitlab-ci.yml in your GitLab repository.
-
-## **Pipeline Configuration (.gitlab-ci.yml):**
-    ```yaml
-    image: docker:latest
-    
-    services:
-      - docker:dind
-    
-    variables:
-      DOCKER_DRIVER: overlay2
-    
-    stages:
-      - build
-      - test
-    
-    build:
-      stage: build
-      script:
-        - docker build -t python-app .
-        - docker images
-    
-    test:
-      stage: test
-      script:
-        - docker run --rm python-app python -m unittes
+    Test (Optional): Runs unit tests(NIL for Now)
 
 ## **Project Structure**
     ```bash

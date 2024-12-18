@@ -1,6 +1,6 @@
 # Python Flask App with Docker and GitLab CI/CD Pipeline
 
-This project demonstrates containerization of a Python Flask application using Docker and automation of the build pipeline using GitLab CI/CD. The repository is designed to showcase CI/CD concepts, including dependency management and container image building.
+This project demonstrates containerization of a Python Flask application using Docker and automation of the build pipeline using GitLab CI/CD.
 
 ---
 
@@ -8,7 +8,7 @@ This project demonstrates containerization of a Python Flask application using D
 - Containerization of a Python Flask app using Docker.
 - Automated build pipeline using GitLab CI/CD.
 - Organized multi-stage pipeline (Build and Test).
-- Ensures code quality and efficient deployment workflows.
+
 
 ---
 
@@ -23,9 +23,6 @@ This project demonstrates containerization of a Python Flask application using D
 
 ### **Prerequisites**
 - Docker installed on your system.
-- GitLab account (if you want to replicate the CI/CD pipeline).
-- Basic understanding of Docker and CI/CD pipelines.
-
 ---
 
 ### **Steps to Run Locally**

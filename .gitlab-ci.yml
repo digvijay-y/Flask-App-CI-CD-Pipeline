@@ -1,0 +1,26 @@
+image: docker:latest
+
+services:
+    - docker:dind
+
+stages:
+    - build
+    - test
+    - deploy
+
+
+build:
+    stage: build
+    script:
+        - docker build -t python-app .
+
+test:
+    stage: test
+    script:
+        - echo "Testing...."
+        - echo "NULL"
+
+deploy:
+    stage : deploy
+    script:
+        - echo "Deployment done"
